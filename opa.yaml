@@ -1,0 +1,27 @@
+services:
+  bs1:
+    url: http://localhost:8881/
+  bs2:
+    url: http://localhost:8882/
+  postr:
+    url: http://localhost:8883/
+
+# bundle:
+#   name: b1.tar.gz
+#   service: bs1
+#   prefix: ""
+
+bundles:
+  bundle1:
+    service: bs1
+    resource: /b1.tar.gz
+  bundle2:
+    service: bs2
+    resource: /b2.tar.gz
+
+status:
+  service: postr
+
+decision_logs:
+  service: postr
+  console: true
