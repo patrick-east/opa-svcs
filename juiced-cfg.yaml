@@ -1,0 +1,14 @@
+services:
+  dbs1:
+    url: http://localhost:8891/
+  postr:
+    url: http://localhost:8881/
+
+
+discovery:
+  name: juiced/discovery
+  resource: /discovery.tar.gz 
+  service: dbs1
+  polling:
+    min_delay_seconds: 5
+    max_delay_seconds: 5

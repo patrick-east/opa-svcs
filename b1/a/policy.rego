@@ -6,3 +6,6 @@ allow {
     input.x == data.a.x
     input.y == data.a.y
 }
+
+
+p = 1

@@ -1,0 +1,53 @@
+{"example": { "discovery": {
+    "bundle": {
+        "name": "b1.tar.gz",
+        "service": "dbs1",
+        "prefix": ""
+    },
+    "decision_logs": {
+        "console": true
+    }
+  }
+}
+}
+
+
+{"example": { "discovery": {
+    "bundles": {
+        "bundle1": {
+            "service": "dbs1",
+            "resource": "/b1.tar.gz"
+        },
+        "bundle2": {
+            "service": "dbs1",
+            "resource": "/b2.tar.gz"
+        }
+    },
+    "decision_logs": {
+        "console": true
+    }
+  }
+}
+}
+
+
+{"example": { "discovery": {
+    "bundles": {
+        "bundle1": {
+            "service": "dbs1",
+            "resource": "/b1.tar.gz"
+        },
+        "bundle2": {
+            "service": "dbs1",
+            "resource": "/b2.tar.gz"
+        }
+    },
+    "decision_logs": {
+        "console": false
+    },
+    "status": {
+        "service": "postr"
+    }
+  }
+}
+}

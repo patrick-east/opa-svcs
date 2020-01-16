@@ -1,0 +1,16 @@
+{"example": { "discovery": {
+    "bundles": {
+        "bundle1": {
+            "service": "dbs1",
+            "resource": "/b1.tar.gz"
+        }
+    },
+    "decision_logs": {
+        "console": false
+    },
+    "status": {
+        "service": "postr"
+    }
+  }
+}
+}
